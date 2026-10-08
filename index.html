@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Our Next Chapter 💙</title>
+<style>
+:root{--deep:#03102b;--navy:#071f49;--blue:#1687ff;--sky:#68d5ff;--ice:#e8f8ff;--muted:#a9c9e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:Inter,Segoe UI,Arial,sans-serif;color:#f5fbff;
+background:radial-gradient(circle at 20% 10%,#12458c 0,#071d43 34%,#020817 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.3;background-image:radial-gradient(circle,#8bdcff 1px,transparent 1px);background-size:34px 34px}
+.glow{position:fixed;width:300px;height:300px;border-radius:50%;filter:blur(80px);opacity:.22;pointer-events:none}
+.g1{background:#1687ff;top:-90px;left:-100px}.g2{background:#51d8ff;right:-120px;top:45%}
+.progress{position:fixed;top:0;left:0;height:3px;background:#67d7ff;box-shadow:0 0 18px #67d7ff;transition:.4s;width:0;z-index:10}
+.wrap{max-width:760px;margin:auto;padding:28px 18px 70px}
+.card{display:none;min-height:88vh;align-items:center;justify-content:center;animation:fade .7s ease}
+.card.active{display:flex}.inner{width:100%;padding:34px 28px;border:1px solid rgba(130,210,255,.25);border-radius:28px;background:rgba(6,28,62,.72);backdrop-filter:blur(18px);box-shadow:0 25px 80px rgba(0,0,0,.4),inset 0 1px rgba(255,255,255,.08)}
+.kicker{color:var(--sky);letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:800}
+h1{font-size:clamp(40px,8vw,70px);line-height:1.02;margin:14px 0}h2{font-size:clamp(28px,6vw,44px);margin:12px 0 20px}
+p{font-size:18px;line-height:1.75;color:#e6f5ff}.blue{color:#76dbff;text-shadow:0 0 18px rgba(75,200,255,.25)}
+.heart{color:#67d7ff;text-shadow:0 0 22px #3dbaff}
+.terminal{background:#020817;border:1px solid #164b85;border-radius:18px;padding:20px;font:16px/1.8 Consolas,monospace;color:#9cddff;box-shadow:inset 0 0 35px rgba(20,130,255,.08)}
+button{margin-top:24px;border:0;border-radius:999px;padding:14px 25px;cursor:pointer;color:#fff;background:linear-gradient(135deg,#1687ff,#42c8ff);font-weight:800;font-size:15px;box-shadow:0 10px 30px rgba(23,137,255,.3);transition:.2s}
+button:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(23,137,255,.45)}
+.quote{border-left:3px solid #42bfff;padding-left:18px;margin:24px 0;color:#dff5ff}
+.row{display:grid;gap:12px;margin:22px 0}.pill{padding:14px 16px;border-radius:16px;background:rgba(60,170,255,.08);border:1px solid rgba(90,190,255,.15)}
+.dots{display:flex;gap:6px;justify-content:center;margin-top:18px}.dot{width:6px;height:6px;border-radius:50%;background:#244d7d}.dot.on{background:#68d1ff;box-shadow:0 0 10px #68d1ff}
+.love-final{text-align:center;position:relative;overflow:hidden;padding-top:8px}
+.hug-title{font-size:15px;font-weight:900;letter-spacing:3px;color:#dff7ff;margin:15px 0 8px;text-shadow:0 0 16px rgba(83,205,255,.8)}
+.hug-animation{display:flex;justify-content:center;gap:3px;flex-wrap:wrap;margin-bottom:4px}
+.hug-animation span{display:inline-block;font-size:36px;animation:hug 1.45s ease-in-out infinite;filter:drop-shadow(0 0 8px rgba(76,195,255,.5))}
+.hug-animation span:nth-child(2){animation-delay:.12s}.hug-animation span:nth-child(3){animation-delay:.24s}.hug-animation span:nth-child(4){animation-delay:.36s}.hug-animation span:nth-child(5){animation-delay:.48s}
+.miss{font-size:23px;font-weight:900;letter-spacing:2px;color:#8ee2ff;margin:15px 0 8px;animation:pulse 2s ease-in-out infinite}
+.float-heart{position:absolute;bottom:-40px;font-size:22px;opacity:0;animation:floatUp 5s linear infinite}
+.float-heart:nth-child(1){left:8%;animation-delay:.2s}.float-heart:nth-child(2){left:28%;animation-delay:1.2s}.float-heart:nth-child(3){left:52%;animation-delay:2.2s}.float-heart:nth-child(4){left:78%;animation-delay:3.1s}
+@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes hug{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-7px) scale(1.18)}}
+@keyframes pulse{0%,100%{opacity:.62;text-shadow:none}50%{opacity:1;text-shadow:0 0 22px #51caff}}
+@keyframes floatUp{0%{transform:translateY(0) scale(.7);opacity:0}15%{opacity:.8}100%{transform:translateY(-75vh) scale(1.2);opacity:0}}
+@media(max-width:520px){.inner{padding:26px 20px}p{font-size:16px}.hug-animation span{font-size:31px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div><div class="glow g1"></div><div class="glow g2"></div>
+<div class="wrap">
+
+<section class="card active"><div class="inner">
+<div class="kicker">A little blue chapter 💙</div><h1>Hey You.</h1>
+<p>I made a little <span class="blue">techie thing</span> for you.</p>
+<div class="terminal">$ git checkout our-story<br>Memories loading... ✓<br>Conversations loading... ✓<br>12 months found. ✓</div>
+<button onclick="next()">Open it →</button></div></section>
+
+<section class="card"><div class="inner">
+<div class="kicker">01 — 12 months</div><h2>12 months. One beautiful story.</h2>
+<p>I honestly don't know how one year passed so quickly.</p>
+<p>In this one year, we've had conversations, laughter, fights, misunderstandings, care, happiness... <strong>so many little moments.</strong></p>
+<p>But above everything, <strong>you became someone very special in my life.</strong> <span class="heart">💙</span></p>
+<button onclick="next()">Next →</button></div></section>
+
+<section class="card"><div class="inner">
+<div class="kicker">02 — Tomorrow</div><h2>Your next chapter starts.</h2>
+<p>Tomorrow starts a new chapter for you. A new company. New people. A new environment. A new routine.</p>
+<p>Honestly, <strong>the thought of not seeing you every day is going to be difficult.</strong></p>
+<p>But just because our place changes, <strong>our connection doesn't have to change.</strong></p>
+<button onclick="next()">Keep going →</button></div></section>
+
+<section class="card"><div class="inner">
+<div class="kicker">03 — One request</div><h2>Just remember one thing.</h2>
+<div class="row">
+<div class="pill">If you're happy — <strong>share it with me.</strong></div>
+<div class="pill">If you're having a difficult day — <strong>talk to me.</strong></div>
+<div class="pill">If something is bothering you — <strong>don't try to handle everything alone.</strong></div>
+</div>
+<p>Even if we fight or misunderstand each other, <strong>let's not make disappearing our way of dealing with it.</strong></p>
+<p>If either of us needs some time, that's okay. But eventually, <strong>let's talk, understand each other, and fix things.</strong></p>
+<button onclick="next()">Next →</button></div></section>
+
+<section class="card"><div class="inner">
+<div class="kicker">04 — Don't give up easily</div><h2>Don't make decisions out of fear.</h2>
+<p>Family pressure may come. Career problems may come. Distance may come. Fear may come.</p>
+<p>Sometimes you may feel that <strong>“maybe I should step back; maybe that's better for everyone.”</strong></p>
+<p>But before giving up, let's talk. Let's understand the problem. Let's see what we can do. We'll compromise when needed, and give each other space when needed.</p>
+<p><strong>But please don't let fear make us give up on something important too easily.</strong></p>
+<button onclick="next()">Next →</button></div></section>
+
+<section class="card"><div class="inner">
+<div class="kicker">05 — From my side</div><h2>My promise.</h2>
+<p>I can't guarantee what the future will look like. I can't promise that life will always be easy.</p>
+<div class="quote"><strong>My feelings for you are genuine.</strong><br>I'll be happy for your happiness. I'll support you when things are difficult. And when you're down, I'll listen.</div>
+<p>Stay safe. Whenever you're free, <strong>video call me.</strong> Whenever you feel like talking, call me. And whenever meeting is possible, tell me — <strong>let's meet.</strong></p>
+<p><strong>No matter what life brings, I don't want us to completely lose each other.</strong></p>
+<button onclick="next()">Next →</button></div></section>
+
+<section class="card"><div class="inner">
+<div class="kicker">06 — Trust</div><h2>Trust the process. 💙</h2>
+<p>Maybe we don't have all the answers right now. We don't know exactly what the future will look like, or what every situation will bring.</p>
+<p>But <strong>stay positive.</strong> Trust yourself. <strong>Trust the process.</strong> Trust God.</p>
+<p>If we're genuine and honest with each other, <strong>I believe God and the universe will guide us toward the right path.</strong></p>
+<p>All we have to do is <strong>stay honest, support each other, and not give up because of fear.</strong></p>
+<button onclick="next()">One last thing →</button></div></section>
+
+<section class="card"><div class="inner">
+<div class="kicker">Final commit</div>
+<div class="terminal">$ git status<br><br>12 months completed ✓<br>Memories: countless<br>Feelings: real<br>Connection: still alive<br>Future: unknown<br><br>Status: Still choosing to care.</div>
+<h2>Our next chapter. ♾️</h2>
+<p>I don't know exactly what our future will look like.</p>
+<p>But <strong>I don't want us to give up on something beautiful just because life becomes a little difficult.</strong></p>
+<p>We'll build our careers. We'll take care of our families. We'll grow as individuals. And we'll live our lives.</p>
+<p>But in the meantime...</p>
+<p class="quote"><strong>We'll be there for each other.</strong><br><br>We'll fight sometimes. 😂<br>We'll get annoyed with each other.<br>Sometimes we'll need space.<br>But eventually, we'll talk.<br><br><strong>We'll care. We'll support each other. We'll compromise. We'll love. 💙</strong></p>
+<p><strong>We won't give up on each other easily.</strong></p>
+<p>I genuinely believe that if we stay honest, strong and positive, <strong>life will find a way to bring us where we're meant to be.</strong></p>
+<p>So don't be afraid of the future.<br>Trust yourself. Trust me. Trust the process. Trust God.</p>
+
+<div class="love-final">
+<span class="float-heart">💙</span><span class="float-heart">💙</span><span class="float-heart">💙</span><span class="float-heart">💙</span>
+<h2 class="blue">I love you. 💙</h2>
+<div class="hug-title">LOTS OF HUGS</div>
+<div class="hug-animation"><span>🫂</span><span>🫂</span><span>🫂</span><span>🫂</span><span>🫂</span></div>
+<div class="miss">MISS YOU ALREADY. 💙</div>
+<p>Take care, Yellow.<br><strong>Always.</strong></p>
+</div>
+
+<button onclick="finish()">git push origin next-chapter →</button>
+</div></section>
+
+<section class="card"><div class="inner" style="text-align:center">
+<div class="kicker">Deployment successful</div><h1>✓ Next chapter created.</h1>
+<p>Whatever comes next...</p><h2 class="blue">Let's face it together. 💙</h2>
+<p>12 months down. A new chapter ahead.</p>
+</div></section>
+
+<div class="dots" id="dots"></div>
+</div>
+<script>
+let i=0;
+const cards=[...document.querySelectorAll('.card')],dots=document.getElementById('dots'),progress=document.getElementById('progress');
+cards.forEach((_,n)=>{const d=document.createElement('span');d.className='dot'+(n===0?' on':'');dots.appendChild(d)});
+function render(){cards.forEach((c,n)=>c.classList.toggle('active',n===i));[...dots.children].forEach((d,n)=>d.classList.toggle('on',n===i));progress.style.width=(i/(cards.length-1)*100)+'%';window.scrollTo({top:0,behavior:'smooth'})}
+function next(){if(i<cards.length-1){i++;render()}}
+function finish(){i++;render()}
+</script>
+</body>
+</html>
